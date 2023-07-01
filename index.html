@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+<title>My Website</title>
+<!-- link css file-->
+<!-- <link rel="stylesheet" href="/JobFreak/style.css"> -->
+<!-- link icon file -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+.sidebar{
+    background: #393646;
+    width: 250px;
+    height:100vh;
+    position: fixed;
+    top:0;
+}
+
+    /* check for this
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+} */
+/* .close-btn{
+    position:absolute;
+    right:0;
+    font-size:25px;
+    margin:10px;
+    cursor:pointer;
+    /* background-color: azure;
+    color:#393646;
+    border: 1px; */ 
+
+
+.menu{
+    width: 100%;
+    /* check this */
+    /* margin-top:50px; */
+}
+.menu items{
+    cursor:pointer;
+    position: relative;
+}
+.menu .items a{
+    color:#fff;
+    line-height: 50px;
+    text-decoration: none;
+    display: block;
+    padding:5px 30px;
+    font-size:18px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.2);
+    border-bottom: 1px solid black;
+
+}
+.menu .items a:hover{
+    background-color:black;
+}
+.menu .items a i{
+    margin-right: 6px;
+
+}
+
+header{
+    background: #6D5D6E;
+}
+header img{
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    /* height: 130px; */
+    border-radius: 50%;
+    margin: 15px;
+    margin-left:70px;
+    cursor: pointer;
+}
+header h1{
+    text-align: center;
+    font-weight: 500;
+    padding: 5px;
+    padding-top: 2px;
+    letter-spacing: 2px;
+    color: #fff;
+    
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 75px;
+
+
+
+}
+pre{
+  font-size: 23px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 500;
+
+}
+#section1{
+ background: linear-gradient(-45deg,white 30%,yellow 0%);
+ font-style: normal ;
+     
+}
+#section2{
+    background: linear-gradient(-45deg,white 30%, #ADE4DB 0%);
+  
+}
+#section3{
+    background: linear-gradient(-45deg,white 30%,orange 0%);
+   
+}
+#section5{
+    background: linear-gradient(-45deg,white 30%,pink 0%);
+   
+}
+#section4{
+  
+    background:#E5BEEC;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    font-family: 'Poppins',sans-serif;
+
+    
+}
+/* .section-header .container h2 {
+   position: absolute;
+   left: 600px;
+   box-sizing: border-box;
+  
+    */
+.section-header{
+    width: 70%;
+  background: #B9EDDD;
+  margin-left: 90px;
+  border-radius: 6px;
+  padding: 20px 10px 30px 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+.section-header .container1 h2{
+    padding-left: 350px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    color: #393646;
+
+}
+.section-header .container1 p{
+    font-size: 18px;
+}
+
+.container{
+    width: 70%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-left:90px;
+  }
+  .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+  }
+  .content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+  }
+  .content .left-side .details{
+    margin: 14px;
+    text-align: center;
+  }
+  .content .left-side .details i{
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+  }
+  .content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .content .left-side .details .text-one,
+  .content .left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+  }
+  .container .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+  }
+  .content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+  }
+  .right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+  }
+  .right-side .input-box input,
+  .right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+  }
+  .right-side .message-box{
+    min-height: 110px;
+  }
+  .right-side .input-box textarea{
+    padding-top: 6px;
+  }
+  .right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .right-side .button input[type="button"]{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button input[type="button"]:hover{
+    background: #5029bc;
+  }
+  
+  @media (max-width: 950px) {
+    .container{
+      width: 90%;
+      padding: 30px 40px 40px 35px ;
+    }
+    .container .content .right-side{
+     width: 75%;
+     margin-left: 55px;
+  }
+  }
+  @media (max-width: 820px) {
+    .container{
+      margin: 40px 0;
+      height: 100%;
+    }
+    .container .content{
+      flex-direction: column-reverse;
+    }
+   .container .content .left-side{
+     width: 100%;
+     flex-direction: row;
+     margin-top: 40px;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+   .container .content .left-side::before{
+     display: none;
+   }
+   .container .content .right-side{
+     width: 100%;
+     margin-left: 0;
+   }
+  }
+
+</style>
+<!-- Head tag -->
+</head>
+<div class="sidebar">
+    <!-- header section -->
+    <header>
+        <!-- close button -->
+        <div class="close-btn">
+            <!-- <i class="fas fa-times"></i> -->
+        </div>
+       <a href="#section1"> <img src="data:image/jpeg;base64,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" alt=""></a>
+       <h1>Elon Musk</h1>
+
+     
+
+    </header>
+    <!-- Menu items -->
+    <div class="menu">
+        <div class="items"><a href="#section1"><i class="fas fa-desktop"></i>Home</a></div>
+        <div class="items"><a href="#section2"><i class="fas fa-table"></i>Profile</a></div>
+        <div class="items"><a href="#section3"><i class="fas fa-info-circle"> </i>Guide</a></div>
+        <div class="items"><a href="#section4"><i class="fas fa-envelope"></i>Contact Us</a></div>
+        <div class="items"><a href="#section5"><i class="fas fa-cog"></i>Settings</a></div>
+    </div>
+</div>
+<div class="content">
+     <section id="section1">
+        <pre>
+          Home Section
+          Add required data Into it!!
+          please watch in 125% zoom for better experience
+          don't forget to watch the contact us section
+
+        </pre>
+     </section>
+</div>
+     <div>
+     <section id="section2">
+        <pre>This is Profile section.
+           Add required information!!</pre>
+     </section>
+     </div>
+     <div>
+     <section id="section3">
+        <pre>This is Guide section.
+        this section helps in adding the guide information of a website</pre>
+     </section>
+     </div>
+
+     <section id="section4">
+        <div class="section-header">
+            <div class="container1">
+                <h2>Contact Us</h2>
+                <p>If u have andy ideas related to artificial intelligence and machine learning,robotics, block chain!! please feel free to send a message to me!!</p>
+
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+              <div class="left-side">
+                <div class="address details">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="topic">Address</div>
+                  <div class="text-one" >324,tesla company</div>
+                  <div class="text-two">Sydney road,australia-560076</div>
+                </div>
+                <div class="phone details">
+                  <i class="fas fa-phone"></i>
+                  <div class="topic">Phone</div>
+                  <div class="text-one">+414 0004356434</div>
+                  <div class="text-two">+638 2576749354</div>
+                </div>
+                <div class="email details">
+                  <i class="fas fa-envelope"></i>
+                  <div class="topic">Email</div>
+                  <div class="text-one">teslacar@email.com</div>
+                  <div class="text-two">elonmuskai@email.com</div>
+                </div>
+              </div>
+              <div class="right-side">
+                <div class="topic-text">Leave a Message Here</div>
+             
+                
+                 <form action="#">
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your email">
+                </div>
+                <div class="input-box message-box">
+                  <textarea name="" id="" cols="30" rows="10" placeholder="enter your message.."></textarea>
+                </div>
+                <div class="button">
+                  <input type="button" value="Send" >
+                </div>
+              </form>
+            </div>
+            </div>
+          </div>
+          </section>
+        
+          <section id="section5">
+            <pre>This is Settings section.
+            add required data into it!</pre>
+         </section>
+    
+        </body>
+        </html>
